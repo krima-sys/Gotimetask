@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Gotimetask
+spec:
+  selector:
+    matchLabels:
+      app: gotimetask1
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: gotimetask1
+    spec:
+      containers:
+       - name:Gocaltask
+         image: krima-sys/Gotimetask
+         imagePullPolicy: IfNotPresent
+         ports:
+          - containerPort: 8080
