@@ -1,5 +1,5 @@
 FROM golang:latest
-RUN git clone https://github.com/munirohitrishi/gowebtask.git
+RUN git clone https://github.com/krima-sys/Gotimetask.git
 
 WORKDIR gowebtask
 
